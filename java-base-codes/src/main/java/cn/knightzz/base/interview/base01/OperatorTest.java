@@ -1,4 +1,4 @@
-package cn.knightzz.base.interview.question;
+package cn.knightzz.base.interview.base01;
 
 import org.junit.Test;
 
