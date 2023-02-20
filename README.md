@@ -1,9 +1,18 @@
-## 项目介绍
+## :rocket: Interview Question
 
-本项目是为了更好的理解一些面试题, 用于测试代码
+![](https://img.shields.io/badge/interview-java-red) 
+![](https://img.shields.io/badge/interview-rpc-red) 
+![](https://img.shields.io/badge/interview-netty-yellow) 
+![](https://img.shields.io/badge/interview-springboot-green) 
+![](https://img.shields.io/badge/interview-rpc-blue)
 
-## 模块介绍
+本项目是针对Java基础面试题去进行的练习, 以便于更好的去理解面试题本身而不是靠背 :fire: :fire: ::fire
 
-java-base-codes
 
-java-spring-codes
+## :pushpin: Module Introduce
+
+### :fire: java-base-codes
+
+主要用于记录java基础面试题, 以理解的方式去记忆
+
+### :fire: :fire: :fire:  java-spring-codes
