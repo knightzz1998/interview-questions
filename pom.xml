@@ -13,6 +13,7 @@
         <module>java-spring-codes</module>
         <module>mysql-interview-codes</module>
         <module>java-concurrent-codes</module>
+        <module>java-collection-codes</module>
     </modules>
 
     <properties>
