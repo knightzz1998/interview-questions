@@ -1,6 +1,7 @@
 package cn.knightzz.mapper;
 
 import cn.knightzz.entity.Account;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * @author 王天赐
@@ -25,4 +26,14 @@ public interface AccountMapper {
      * @return
      */
     Account findAccountById(long id);
+
+    /**
+     * 转账
+     * @param name
+     * @param money
+     * @return
+     */
+    int transferMoney(@Param("name") String name, @Param("money") double money);
+
+    int updateBalance(@Param("name") String name, @Param("balance") double balance);
 }

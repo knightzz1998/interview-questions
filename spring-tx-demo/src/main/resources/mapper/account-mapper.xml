@@ -11,6 +11,20 @@
     </insert>
 
 
+    <update id="transferMoney">
+        update account
+        set balance = balance + #{money}
+        where name = #{name}
+    </update>
+
+    <update id="updateBalance">
+        update account
+        set balance = #{balance}
+        where name = #{name}
+    </update>
+
+
+
     <select id="findAccountById" resultType="cn.knightzz.entity.Account">
         select id, name, balance
         from account
