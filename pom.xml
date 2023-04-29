@@ -14,6 +14,9 @@
         <module>mysql-interview-codes</module>
         <module>java-concurrent-codes</module>
         <module>java-collection-codes</module>
+        <module>spring-interview</module>
+        <module>mini-spring-source</module>
+        <module>springmvc-demo</module>
     </modules>
 
     <properties>
