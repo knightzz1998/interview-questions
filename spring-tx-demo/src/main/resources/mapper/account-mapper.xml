@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.knightzz.mapper.AccountMapper">
+
+    <!-- 自增id 需要设置keyProperty和 useGeneratedKeys -->
+    <insert id="insertAccount" parameterType="cn.knightzz.entity.Account" useGeneratedKeys="true" keyProperty="id">
+        insert into account(name, balance)
+        values (#{name}, #{balance})
+    </insert>
+
+
+    <select id="findAccountById" resultType="cn.knightzz.entity.Account">
+        select id, name, balance
+        from account
+        where id = #{id}
+    </select>
+
+</mapper>

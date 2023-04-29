@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!-- 开启注解配置 -->
+    <context:annotation-config/>
+    <!-- aop 自动代理-->
+    <aop:aspectj-autoproxy/>
+
+    <context:component-scan base-package="cn.knightzz"/>
+
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
+          init-method="init" destroy-method="close">
+        <!--        set注入给DruidDataSource提供连接数据库信息-->
+        <!--        使用属性配置文件中的数据，语法${key}-->
+        <property name="url" value="${jdbc.url}"/> <!--setUrl()-->
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.passwd}"/>
+        <property name="maxActive" value="${jdbc.max}"/>
+    </bean>
+    <!--  声明的是mybatis中所提供的SqlSessionFactoryBean类，这个类内部创建SqlSessionFactory的-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--        set注入，把数据库连接池付给了dataSource属性-->
+        <property name="dataSource" ref="dataSource"/>
+        <!-- mybatis主配置文件的位置
+             configLocation属性是Resource类型，读取配置文件
+             它的赋值，使用value，指定文件的路径，使用classpath：表示文件的位置
+        -->
+        <!-- Mybatis配置文件 -->
+        <!--<property name="configLocation" value="classpath:mybatis-config.xml"/>-->
+        <!-- Mapper文件所在目录 -->
+        <property name="mapperLocations" value="classpath:mapper/*.xml"/>
+    </bean>
+
+    <!-- 扫描 Mapper 类 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="cn.knightzz.mapper"/>
+    </bean>
+
+</beans>

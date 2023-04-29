@@ -17,6 +17,7 @@
         <module>spring-interview</module>
         <module>mini-spring-source</module>
         <module>springmvc-demo</module>
+        <module>spring-tx-demo</module>
     </modules>
 
     <properties>
