@@ -18,6 +18,7 @@
         <module>mini-spring-source</module>
         <module>springmvc-demo</module>
         <module>spring-tx-demo</module>
+        <module>spring-source</module>
     </modules>
 
     <properties>
