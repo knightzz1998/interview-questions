@@ -19,6 +19,8 @@
         <module>springmvc-demo</module>
         <module>spring-tx-demo</module>
         <module>spring-source</module>
+        <module>desgin-pattern</module>
+        <module>java-concurrent-codes/java-concurrent-future</module>
     </modules>
 
     <properties>

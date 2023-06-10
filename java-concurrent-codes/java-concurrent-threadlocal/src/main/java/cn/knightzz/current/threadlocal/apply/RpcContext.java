@@ -1,4 +1,4 @@
-package cn.knightzz.current.threadlocal;
+package cn.knightzz.current.threadlocal.apply;
 
 /**
  * @author 王天赐

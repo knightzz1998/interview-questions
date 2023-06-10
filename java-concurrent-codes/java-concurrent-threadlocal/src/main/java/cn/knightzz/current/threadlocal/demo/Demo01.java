@@ -1,4 +1,6 @@
-package cn.knightzz.current.threadlocal;
+package cn.knightzz.current.threadlocal.demo;
+
+import cn.knightzz.current.threadlocal.apply.RpcContext;
 
 /**
  * @author 王天赐
