@@ -5,9 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>cn.knightzz</groupId>
-        <artifactId>interview-questions</artifactId>
+        <artifactId>java-concurrent-codes</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../../pom.xml</relativePath>
     </parent>
 
     <artifactId>java-concurrent-future</artifactId>

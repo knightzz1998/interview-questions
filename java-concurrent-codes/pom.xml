@@ -15,6 +15,7 @@
         <module>java-concurrent-aqs</module>
         <module>java-concurrent-threadlocal</module>
         <module>java-concurrent-demo</module>
+        <module>java-concurrent-future</module>
     </modules>
 
     <properties>
@@ -37,6 +38,11 @@
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>23.0</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.1</version>
         </dependency>
     </dependencies>
 </project>
