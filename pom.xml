@@ -21,6 +21,7 @@
         <module>spring-source</module>
         <module>desgin-pattern</module>
         <module>java-concurrent-codes/java-concurrent-future</module>
+        <module>java-io-interview</module>
     </modules>
 
     <properties>
