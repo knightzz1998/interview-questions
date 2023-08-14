@@ -16,6 +16,9 @@
         <module>java-concurrent-threadlocal</module>
         <module>java-concurrent-demo</module>
         <module>java-concurrent-future</module>
+        <module>java-concurrent-hashmap</module>
+        <module>java-utils-jol</module>
+        <module>java-concurrent-reentrant-lock</module>
     </modules>
 
     <properties>
